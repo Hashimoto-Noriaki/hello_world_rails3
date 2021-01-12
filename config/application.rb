@@ -27,6 +27,7 @@ module HelloWorldRails3
       g.template_engine false
     end
     config.api_only = true
-
-  end
+    config.middleware.use ActionDispatch::Flash
 end
+end
+
